@@ -1,0 +1,13 @@
+services:
+  mikhmon:
+    image: ethergig/mikhmon-ros7:latest
+    container_name: mikhmon-ros7
+    restart: unless-stopped
+    volumes:
+      - data:/var/www/html
+    ports:
+      - 9000:9000
+  
+volumes:
+  data:
+  
